@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch-A-Sketch</title>
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/bd2797584e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-side">
+        <div class="title">Etch-A-Sketch</div>
+        <div class="button" id="brushBtn">
+          Brush <i class="fa-solid fa-paintbrush icon"></i>
+        </div>
+        <div class="button" id="eraserBtn">
+          Eraser <i class="fa-solid fa-eraser icon"></i>
+        </div>
+        <div class="button" id="clearBtn">
+          Clear <i class="fa-solid fa-trash icon"></i>
+        </div>
+        <div class="size">Color:</div>
+        <input type="color" id="colorPicker" name="colorPicker" value="#ff0000" />
+        <div class="size" id="size">Size: 16×16</div>
+        <input
+          type="range"
+          min="4"
+          max="32"
+          value="16"
+          step="4"
+          class="slider"
+          id="slider"
+        />
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </body>
+</html>
